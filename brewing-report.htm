@@ -1,0 +1,70 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+  <title>$NAME
+  </title>
+<link rel="stylesheet" href="blockerbrew-style.css" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+body { font-size: $PRINT_SCALE%; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+  <div class="logo">
+    <h1>$NAME
+    </h1>
+    <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)
+    </h2>
+   </div>
+ </div>
+ <div class="col1">
+   <span class="item">Batch Size:
+   </span> $DISPLAY_BATCH_SIZE
+   <br>
+   <span class="item">Boil Size:
+   </span> $DISPLAY_BOIL_SIZE
+   <br>
+   <span class="item">Boil Time:
+   </span> $BOIL_TIME min
+   <br>
+   <span class="item">Equipment:
+   </span> $EQUIPMENT
+   <br>
+   <span class="item">Efficiency:
+   </span> $EFFICIENCY %
+   <br>
+   <span class="item">Est Mash Efficiency:
+   </span> $EST_MASH_EFFICIENCY
+ </div>
+ <div class="col2">
+   <span class="item">Date:
+   </span> $DATE
+   <br>
+   <span class="item">Target OG:
+   </span> $DISPLAY_OG
+   <br>
+   <span class="item">Target FG:
+   </span> $DISPLAY_FG
+   <br>
+   <span class="item">Target ABV:
+   </span> $ABV
+ </div>
+
+<br>
+<h3 style="margin-top: 20px;">Brewing Notes</h3>
+$NOTES
+<br>
+$WATER_PREP
+$MASH_INGREDIENTS $STEEP_INGREDIENTS $SPARGE_INGREDIENTS
+$FIRST_WORT_HOPS
+$BOIL_INGREDIENTS
+$STEEP_HOPS
+$FERMENT_INGREDIENTS
+$PRIMARY_INGREDIENTS
+$SECONDARY_INGREDIENTS
+$BOTTLING_INGREDIENTS
+$TERTIARY_STEP
+</div>
+</body>
+</html>
