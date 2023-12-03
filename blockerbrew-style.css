@@ -154,7 +154,7 @@ a.vendorlink:active {
 #wrapper
 {
  background: #fff;
- width: 98%;
+ width: 100%;
  margin: 0 auto;
  /* border: 1px solid #888; */
  padding: 6px;
@@ -169,25 +169,26 @@ a.vendorlink:active {
 }
 
 .col1 {
-    width: 30%;
-    margin: 5px 5px 5px 10px; /* Adjusted margin for better spacing */
+    width: 29%;
+    margin: 5px; /* Adjusted margin for better spacing */
     background-color: #ffffff;
     font: 1em bold Arial, Helvetica, sans-serif;
     float: left;
 }
 
 .col2 {
-    width: 40%;
+    width: 45%;
     margin: 5px;
     font: 1em bold Arial, Helvetica, sans-serif;
     background-color: #ffffff;
 }
 
 .col3 {
-    width: 30%;
-    margin: 5px 10px 5px 5px; /* Adjusted margin for better spacing */
+    width: 29%;
+    margin: 5px; /* Adjusted margin for better spacing */
     font: 1em bold Arial, Helvetica, sans-serif;
     background-color: #ffffff;
+    float: right;
 }
 
 .full
@@ -985,7 +986,7 @@ table.r_hdr td {
  font: 1em Arial, Helvetica, sans-serif;
 }
 
-table.rhdr td {
+table.rhdr td {
   overflow:hidden;
   text-overflow: ellipsis;
   white-space:nowrap;
