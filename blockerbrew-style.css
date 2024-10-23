@@ -28,13 +28,13 @@ body {
   margin: 5px 0 0;
 }
 
-.col1,
-.col2,
-.col3 {
-  width: calc(30% - 20px); /* Adjusting for margin */
-  margin: 0px;
-  box-sizing: border-box; /* Include padding and border in width */
-  float: left;
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* Equal width columns */
+  /* flex: 50%; or other values for unequal columns */
 }
 
 .item {
