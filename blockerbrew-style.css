@@ -1,15 +1,16 @@
 /* blockerbrew-style.css */
 
 body {
-  font-family: Arial, sans-serif; /* Change the font family as needed */
+  font-family: 'Noto Sans', 'Nanum Gothic', Arial, Helvetica, sans-serif; /* Change the font family as needed */
   margin: 0;
   padding: 0;
   background-color: #f8f8f8; /* Set your preferred background color */
 }
 
 #wrapper {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
+  overflow: hidden; /* Clear floats */
 }
 
 #header {
@@ -30,17 +31,32 @@ body {
 .col1,
 .col2,
 .col3 {
+  width: calc(30% - 20px); /* Adjusting for margin */
+  margin: 0px;
+  box-sizing: border-box; /* Include padding and border in width */
   float: left;
-  width: 30%;
-  margin: 10px;
 }
 
 .item {
-  font-weight: bold;
+  font: 1em 'Noto Sans', 'Nanum Gothic', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  max-width: 100%; /* Limit maximum width of items */
+  white-space: nowrap; /* Prevent items from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
+
+.brewing-notes {
+
+}
+
+.label {
+  font-weight: bold; /* Make the labels bold */
 }
 
 h3 {
   margin-top: 20px;
+  padding: 2px;
 }
 
 /* Add more styles as needed for your specific layout and design */
