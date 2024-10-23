@@ -1,73 +1,57 @@
-<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>$NAME
-  </title>
-<link rel="stylesheet" href="blockerbrew-style.css" type="text/css">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<style type="text/css">
-body { font-size: $PRINT_SCALE%; }
-</style>
+  <title>$NAME</title>
+  <link rel="stylesheet" href="blockerbrew-style.css" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    body { font-size: $PRINT_SCALE%; }
+  </style>
 </head>
 <body>
-<div id="wrapper">
-  <div id="header">
-  <div class="logo">
-    <h1>$NAME
-    </h1>
-    <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)
-    </h2>
-   </div>
- </div>
- <div class="col1">
-   <span class="item">Batch Size:
-   </span> $DISPLAY_BATCH_SIZE
-   <br>
-   <span class="item">Boil Size:
-   </span> $DISPLAY_BOIL_SIZE
-   <br>
-   <span class="item">Boil Time:
-   </span> $BOIL_TIME min
-   <br>
-   <span class="item">Equipment:
-   </span> $EQUIPMENT
-   <br>
-   <span class="item">Efficiency:
-   </span> $EFFICIENCY %
-   <br>
-   <span class="item">Est Mash Efficiency:
-   </span> $EST_MASH_EFFICIENCY
- </div>
- <div class="col2">
-   <span class="item">Date:
-   </span> $DATE
-   <br>
-   <span class="item">Target OG:
-   </span> $DISPLAY_OG
-   <br>
-   <span class="item">Target FG:
-   </span> $DISPLAY_FG
-   <br>
-   <span class="item">Target ABV:
-   </span> $ABV
- </div>
- <div class="col3">
-   <span class="item">Color:
-   </span> $EST_COLOR
- </div>
-<br>
-<h3 style="margin-top: 20px;">Brewing Notes</h3>
-$NOTES
-<br>
-$WATER_PREP
-$MASH_INGREDIENTS $STEEP_INGREDIENTS $SPARGE_INGREDIENTS
-$FIRST_WORT_HOPS
-$BOIL_INGREDIENTS
-$STEEP_HOPS
-$FERMENT_INGREDIENTS
-$PRIMARY_INGREDIENTS
-$SECONDARY_INGREDIENTS
-$BOTTLING_INGREDIENTS
-$TERTIARY_STEP
-</div>
+  <div id="wrapper">
+    <div id="header">
+      <div class="logo">
+        <h1>$NAME</h1>
+        <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)</h2>
+      </div>
+    </div>
+    <div class="col1">
+      <div class="item"><span class="label">Batch Size:</span> $DISPLAY_BATCH_SIZE</div>
+      <div class="item"><span class="label">Boil Size:</span> $DISPLAY_BOIL_SIZE</div>
+      <div class="item"><span class="label">Boil Time:</span> $BOIL_TIME min</div>
+      <div class="item"><span class="label">Equipment:</span> $EQUIPMENT</div>
+      <div class="item"><span class="label">Efficiency:</span> $EFFICIENCY %</div>
+      <div class="item"><span class="label">Est Mash Efficiency:</span> $EST_MASH_EFFICIENCY</div>
+    </div>
+    <div class="col2">
+      <div class="item"><span class="label">Date:</span> $DATE</div>
+      <div class="item"><span class="label">Target OG:</span> $DISPLAY_OG</div>
+      <div class="item"><span class="label">Target FG:</span> $DISPLAY_FG</div>
+      <div class="item"><span class="label">Target ABV:</span> $ABV</div>
+    </div>
+    <div class="col3">
+      <div class="item"><span class="label">Color:</span> $EST_COLOR</div>
+    </div>
+  </div>
+  <div id="wrapper">
+
+    <!-- Brewing Notes and subsequent content should be inside the wrapper -->
+    <div class="brewing-notes">
+      <div class="item"><span class="label">Brewing Notes</span></div>
+      $NOTES
+      </div>
+    <div>
+      $WATER_PREP
+      $MASH_INGREDIENTS $STEEP_INGREDIENTS $SPARGE_INGREDIENTS
+      $FIRST_WORT_HOPS
+      $BOIL_INGREDIENTS
+      $STEEP_HOPS
+      $FERMENT_INGREDIENTS
+      $PRIMARY_INGREDIENTS
+      $SECONDARY_INGREDIENTS
+      $BOTTLING_INGREDIENTS
+      $TERTIARY_STEP
+    </div>
+  </div>
 </body>
 </html>
